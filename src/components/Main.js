@@ -11,7 +11,7 @@ const Main = () => {
   const api_call = async e => {
     e.preventDefault();
     const location = e.target.elements.location.value
-    const API_KEY = "43c7ee22c8621489263185308bf448d3";
+    const API_KEY = "api...";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`;
     const request = axios.get(url);
     const response = await request;
