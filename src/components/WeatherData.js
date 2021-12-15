@@ -1,6 +1,9 @@
 import React from "react";
+import { useContext } from "react/cjs/react.development";
+import Context from "../Context";
 
-function WeatherData({weather}) {
+function WeatherData() {
+  const {weather} = useContext(Context)
   const {temp, humidity, pressure} = weather
   return (
     <div className="weather-data">
